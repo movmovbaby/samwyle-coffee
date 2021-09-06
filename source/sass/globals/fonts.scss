@@ -1,0 +1,49 @@
+/* josefin-sans-700 - latin */
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/josefin-sans-latin-700.woff2") format("woff2"),
+    url("/../fonts/josefin-sans-latin-700.woff") format("woff");
+}
+
+/* josefin-sans-regular - latin */
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/josefin-sans-latin-regular.woff2") format("woff2"),
+    url("../fonts/josefin-sans-latin-regular.woff") format("woff");
+}
+
+/* alegreya-sans-regular - latin */
+@font-face {
+  font-family: "Alegreya Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../../fonts/alegreya-sans-latin-regular.woff2") format("woff2"),
+    url("../../fonts/alegreya-sans-latin-regular.woff") format("woff");
+}
+
+/* cedarville-cursive-regular - latin */
+@font-face {
+  font-family: "Cedarville Cursive";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/cedarville-cursive-regular.woff2") format("woff2"),
+    url("../fonts/cedarville-cursive-regular.woff") format("woff");
+}
+
+/* george-rounded-regular */
+@font-face {
+  font-family: "George Rounded";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/george-rounded-regular.woff2") format("woff2"),
+    url("../fonts/george-rounded-regular.woff") format("woff");
+}
+
+/* font families */

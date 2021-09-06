@@ -1,0 +1,104 @@
+.about-us {
+  margin-bottom: 68px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 134px;
+  }
+}
+
+.about-us__top-background {
+  background-color: $yellow-pink;
+  padding-bottom: 25px;
+  margin-bottom: 31px;
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+    height: 287px;
+    position: relative;
+
+    &::before {
+      content: "About us";
+      position: absolute;
+      top: -23px;
+      left: 0px;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      font-family: "Cedarville Cursive", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+}
+
+.about-us__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: block;
+    margin-top: -22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    img {
+      width: 369px;
+      height: 265px;
+      margin-top: 76px;
+      margin-left: 41px;
+    }
+  }
+}
+
+.about-us__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 339px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 88px;
+    align-items: flex-start;
+    width: 650px;
+  }
+}
+
+.about-us__header {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 38px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+    margin-top: 4px;
+  }
+}
+
+.about-us__text {
+  font-family: "Alegreya Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 36px;
+  width: 313px;
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+    margin-bottom: 13px;
+    margin-left: 15px;
+  }
+}

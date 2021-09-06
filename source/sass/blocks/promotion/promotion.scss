@@ -1,0 +1,104 @@
+.promotion {
+  margin-bottom: 113px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+  }
+}
+
+.promotion__top-background {
+  background-color: $light-gray;
+  height: 287px;
+  margin-bottom: 29px;
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    height: 276px;
+    margin-top: 27px;
+    margin-right: 72px;
+    position: relative;
+
+    &::before {
+      content: "Promotion";
+      position: absolute;
+      top: -25px;
+      right: -6px;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      font-family: "Cedarville Cursive", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+}
+
+.promotion__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-top: -17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -13px;
+    margin-right: 31px;
+  }
+}
+
+.promotion__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+  }
+}
+
+.promotion__header {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 38px;
+  align-self: flex-start;
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.promotion__text {
+  font-family: "Alegreya Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 36px;
+  width: 330px;
+
+  @media (min-width: $desktop-width) {
+    width: 615px;
+    margin-bottom: 17px;
+  }
+}
+
+.promotion__button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 235px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}

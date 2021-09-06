@@ -1,0 +1,159 @@
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: minmax(max-content, 646px) 1fr;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.contacts__img-wrapper {
+  margin-bottom: 27px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    margin-bottom: 0;
+
+    &::before {
+      content: "Contacts";
+      position: absolute;
+      top: -21px;
+      right: -6px;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      font-family: "Cedarville Cursive", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+}
+
+.contacts__img {
+  border-radius: 5px;
+  @media (min-width: $desktop-width) {
+    width: 646px;
+    height: 351px;
+  }
+}
+
+.contacts-header {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 45px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-top: 15px;
+    margin-left: 175px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 19px;
+      left: -133px;
+      width: 102px;
+      height: 2px;
+      border: 1px solid $hard-green;
+    }
+  }
+}
+.address {
+  margin-bottom: 54px;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    margin-bottom: 0;
+  }
+}
+
+.address__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 235px;
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+  gap: 9px;
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    margin-left: 177px;
+    margin-top: -50px;
+  }
+}
+
+.address__item {
+  font-family: "Alegreya Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 45px;
+  text-decoration: none;
+}
+
+.address-item__hidden {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.address__more-button {
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  padding-left: 17px;
+  padding-right: 21px;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  width: 189px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.17);
+  border-radius: 5px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.contacts__copyright {
+  @media (min-width: $desktop-width) {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    margin-top: 112px;
+    margin-left: 38px;
+  }
+}
+
+.copyright__text {
+  font-family: "Alegreya Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 36px;
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    font-size: 19px;
+    line-height: 36px;
+  }
+}

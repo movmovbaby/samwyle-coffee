@@ -1,0 +1,8 @@
+.wrapper {
+  width: 339px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
