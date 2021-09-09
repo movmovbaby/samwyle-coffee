@@ -58,6 +58,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  width: 339px;
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;
